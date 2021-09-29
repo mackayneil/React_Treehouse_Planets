@@ -89,11 +89,7 @@ const App = (props) => {
             {props.allPlanets.map(
                 planet =>
                     <Planet 
-                        url = { planet.url }                        
-                        name = { planet.name }
-                        desc = { planet.desc }
-                        diameter = { planet.diameter }
-                        moons = { planet.moons }
+                       {...planet}
                         key = {planet.id.toString()}
                     />                
             )}            
